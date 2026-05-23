@@ -6,7 +6,7 @@ This project is an end-to-end workforce forecasting and labor planning prototype
 
 - **Interactive Tableau Story:** https://public.tableau.com/shared/JJFMGGF7Y?:display_count=n&:origin=viz_share_link
 - **Streamlit App Demo:** https://warehouse-frontend-ce88.onrender.com/
-- **GitHub Repository:** [View Code](PASTE_GITHUB_LINK_HERE)
+- **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
 
 ## Project Overview
 
@@ -183,8 +183,8 @@ VET-VTO-Forecasting/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/draculess99/VET-VTO-Forecasting.git
+cd VET-VTO-Forecasting
 ```
 
 ### 2. Create and activate a virtual environment
@@ -328,5 +328,6 @@ Potential future improvements include:
 
 ## Author
 
-Created by Wil Low as part of a data analytics and machine learning Springboard portfolio project.
+Created by Wil Low as part of a data analytics and machine learning Springboard portfolio 2026 project.
 - **LinkedIn:** https://www.linkedin.com/in/gammaconsult/
+- **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
