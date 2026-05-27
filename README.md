@@ -103,6 +103,14 @@ The Streamlit app provides the user interface, charts, scenario inputs, and busi
 
 The Flask API loads the trained model and returns forecast results, staffing decisions, and cost estimates.
 
+## AI-Assisted Decision Summaries
+
+The application includes an optional generative AI explanation layer that converts forecast outputs and staffing recommendations into concise business-readable operational summaries.
+
+The AI summary system uses structured forecast metrics, workload classifications, operational stress indicators, and staffing recommendations to generate executive-style operational commentary intended to support scenario interpretation and workforce planning discussions.
+
+The generative AI layer is designed as an explanation and communication aid rather than an autonomous decision-making system.
+
 ## Project Structure
 
 ```text
