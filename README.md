@@ -333,6 +333,21 @@ This project shows how machine learning can support warehouse workforce planning
 
 The system is designed to connect technical forecasting with operational decisions that warehouse managers can understand and act on.
 
+## Operational Stress Simulation
+
+To better approximate real warehouse conditions, the application includes configurable operational stress modifiers.
+
+These scenario controls allow users to simulate changing operational conditions that may affect workforce demand and labor planning, including:
+
+- Demand velocity pressure
+- Shipping delay pressure
+- Warehouse congestion pressure
+- Logistics stress pressure
+
+These inputs are not intended to represent production-grade operational formulas. Instead, they provide a scenario-testing framework that allows the forecasting system to simulate how operational instability may influence staffing recommendations and labor cost projections.
+
+The stress controls are designed to support exploratory workforce planning and operational what-if analysis.
+
 ## Limitations
 
 This project uses Walmart sales data as a proxy for warehouse labor demand. In a real warehouse environment, the model would be improved using actual operational data such as:
