@@ -148,7 +148,20 @@ VET-VTO-Forecasting/
 └── docs/
     ├── tableau_story_export.pdf
     ├── warehouse_workforce_forecasting_tableau_story.twbx
-    └── README.md
+    ├──  README.md
+    │
+    ├── images/
+    │   ├── 01_ecr_repositories_created.png
+    │   ├── 02_ecs_cluster_created.png
+    │   ├── 03_backend_task_definition.png
+    │   ├── 04_frontend_task_definition.png
+    │   ├── 05_ecs_services_running.png
+    │   ├── 06_fargate_task_running.png
+    │   ├── 07_live_fargate_dashboard.png
+    │   └── 08_vetvto_frontend_public ip.png
+    │ 
+    └── architecture/
+        └── system_architecture.png
 ```
 
 ## Example Visuals
@@ -287,6 +300,32 @@ The project produces:
 - Docker
 - Docker Compose
 - GitHub
+
+## AWS Fargate Deployment
+
+This project was containerized using Docker and deployed to AWS ECS Fargate using separate frontend and backend services.
+
+### ECS Cluster and Services
+![ECS Cluster](docs/images/05_ecs_services_running.png)
+
+### Frontend Task Running
+![Frontend Task](docs/images/04_frontend_task_definition.png)
+
+### Backend Task Definition
+![Backend Task](docs/images/03_backend_task_definition.png)
+
+### Amazon ECR Repositories
+![ECR](docs/images/01_ecr_repositories_created.png)
+
+### Live Forecast Dashboard on AWS
+![Live Dashboard](docs/images/07_live_fargate_dashboard.png)
+
+The deployment demonstrates:
+- Docker containerization
+- ECS service orchestration
+- AWS Fargate serverless containers
+- Frontend/backend microservice separation
+- Cloud deployment of ML forecasting workloads
 
 ## Business Value
 
