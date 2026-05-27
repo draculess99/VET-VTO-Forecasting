@@ -1,4 +1,4 @@
-# VET/VTO Workforce Forecasting & Labor Optimization
+# AI-Powered Warehouse Workforce Forecasting & VET/VTO Optimization
 
 This project is an end-to-end workforce forecasting and labor planning prototype. It uses historical demand data to forecast weekly workload, generate VET/VTO/Normal staffing signals, compare model performance against baselines, and estimate potential staffing cost impact.
 
@@ -10,7 +10,7 @@ This project is an end-to-end workforce forecasting and labor planning prototype
 
 ## Project Overview
 
-This project is an end-to-end workforce forecasting and staffing decision support system built for a warehouse operations use case.
+This project demonstrates an end-to-end machine learning operations prototype using XGBoost forecasting, Streamlit, Flask APIs, Docker containerization, and AWS ECS Fargate deployment.
 
 The system uses historical demand patterns to forecast future weekly workload and classify each week into one of three staffing actions:
 
@@ -93,13 +93,11 @@ cumulative_savings = savings.cumsum()
 
 This allows the project to show both weekly savings and cumulative savings over time.
 
-## Application Architecture
+## System Architecture
+
+![System Architecture](docs/architecture/system_architecture.png)
 
 The project uses a two-part application structure:
-
-```text
-Streamlit frontend  <-->  Flask forecasting API
-```
 
 The Streamlit app provides the user interface, charts, scenario inputs, and business explanations.
 
@@ -240,7 +238,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## Docker Support
+## Dockerized Application Deployment
 
 This repository includes Docker files for containerized local testing and future cloud deployment.
 
@@ -300,6 +298,10 @@ The project produces:
 - Docker
 - Docker Compose
 - GitHub
+- AWS ECS
+- AWS Fargate
+- Amazon ECR
+- CloudWatch
 
 ## AWS Fargate Deployment
 
@@ -333,22 +335,20 @@ This project shows how machine learning can support warehouse workforce planning
 
 The system is designed to connect technical forecasting with operational decisions that warehouse managers can understand and act on.
 
-## Operational Stress Simulation
+## Operational Scenario Stress Testing
 
-To better approximate real warehouse conditions, the application includes configurable operational stress modifiers.
-
-These scenario controls allow users to simulate changing operational conditions that may affect workforce demand and labor planning, including:
+The application includes configurable operational stress modifiers that simulate changing warehouse conditions such as:
 
 - Demand velocity pressure
-- Shipping delay pressure
-- Warehouse congestion pressure
-- Logistics stress pressure
+- Shipping delays
+- Warehouse congestion
+- Logistics stress
 
-These inputs are not intended to represent production-grade operational formulas. Instead, they provide a scenario-testing framework that allows the forecasting system to simulate how operational instability may influence staffing recommendations and labor cost projections.
+These controls allow exploratory scenario planning and workforce forecasting under changing operational assumptions.
 
 The stress controls are designed to support exploratory workforce planning and operational what-if analysis.
 
-## Limitations
+## Assumptions and Limitations
 
 This project uses Walmart sales data as a proxy for warehouse labor demand. In a real warehouse environment, the model would be improved using actual operational data such as:
 
