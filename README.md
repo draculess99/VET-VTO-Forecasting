@@ -6,12 +6,14 @@ Machine Learning Forecasting | Warehouse Workforce Planning | Amazon Warehouse O
 
 This project demonstrates an end-to-end AI-powered warehouse workforce forecasting and VET/VTO optimization system inspired by Amazon fulfillment center operations. It uses historical demand data and machine learning to forecast weekly workload, recommend VET, VTO, or Normal staffing actions, benchmark performance against baseline forecasting methods, and estimate potential staffing cost impact.
 
+
 ![VET/VTO Workforce Forecasting Dashboard](images/streamlit_dashboard_home.png)
+
 
 ## Project Links
 
 - **Interactive Tableau Story:** https://public.tableau.com/shared/JJFMGGF7Y?:display_count=n&:origin=viz_share_link
-- **Streamlit App Demo:** https://warehouse-frontend-ce88.onrender.com/
+- **Streamlit Live Demo:** https://warehouse-frontend-ce88.onrender.com/
 - **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
 
 ## AWS Fargate Deployment
