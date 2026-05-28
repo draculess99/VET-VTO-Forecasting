@@ -1,6 +1,6 @@
 # AI-Powered Warehouse Workforce Forecasting & VET/VTO Optimization
 
-This project is an end-to-end workforce forecasting and labor planning prototype. It uses historical demand data to forecast weekly workload, generate VET/VTO/Normal staffing signals, compare model performance against baselines, and estimate potential staffing cost impact.
+This project demonstrates an end-to-end machine learning and operational workforce planning prototype. It uses historical demand data to forecast weekly workload, generate VET/VTO/Normal staffing signals, compare model performance against baselines, and estimate potential staffing cost impact.
 
 ## Project Links
 
@@ -330,7 +330,16 @@ The project produces:
 
 ## AWS Fargate Deployment
 
-This project was containerized using Docker and deployed to AWS ECS Fargate using separate frontend and backend services.
+This project was containerized using Docker and successfully deployed as separate frontend and backend container services using Amazon ECS Fargate and Amazon ECR.
+
+The deployment architecture separates the Streamlit frontend from the Flask forecasting API, enabling independent containerized services and scalable cloud-based workforce forecasting workflows.
+
+The deployment demonstrates:
+- Docker containerization
+- ECS service orchestration
+- AWS Fargate serverless containers
+- Frontend/backend microservice separation
+- Cloud deployment of ML forecasting workloads
 
 ### ECS Cluster and Services
 ![ECS Cluster](docs/images/05_ecs_services_running.png)
@@ -398,7 +407,9 @@ The model uses retail demand proxy data to simulate warehouse workload patterns,
 
 Potential future improvements include:
 
-- Deploying the app to AWS Fargate
+- Adding production-grade load balancing and service discovery
+- Migrating from public IP communication to internal ECS service networking
+- Adding CI/CD deployment pipelines
 - Adding LangGraph or CrewAI-based explanation agents
 - Adding real-time scenario planning
 - Adding RAG-based documentation support
