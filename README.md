@@ -12,6 +12,7 @@ This project demonstrates an end-to-end AI-powered warehouse workforce forecasti
 
 ## Project Links
 
+- **Project Landing Page:** https://draculess99.github.io/VET-VTO-Forecasting/
 - **Interactive Tableau Story:** https://public.tableau.com/shared/JJFMGGF7Y?:display_count=n&:origin=viz_share_link
 - **Streamlit Live Demo:** https://warehouse-frontend-ce88.onrender.com/
 - **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
