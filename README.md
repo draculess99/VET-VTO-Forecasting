@@ -103,6 +103,23 @@ The Streamlit app provides the user interface, charts, scenario inputs, and busi
 
 The Flask API loads the trained model and returns forecast results, staffing decisions, and cost estimates.
 
+## Operational Scenario Rule Engine
+
+The application includes a scenario-based operational rule engine using configurable templates stored in `scenario_templates.tsv`.
+
+The rule engine maps:
+- demand intensity
+- operational stress
+- labor cost pressure
+
+to:
+- VET/VTO staffing actions
+- operational severity levels
+- executive summaries
+- workforce recommendations
+
+This layer simulates real-world warehouse operational decision-making beyond raw forecasting outputs.
+
 ## AI-Assisted Decision Summaries
 
 The application includes an optional generative AI explanation layer that converts forecast outputs and staffing recommendations into concise business-readable operational summaries.
