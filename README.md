@@ -1,4 +1,4 @@
-# AI-Powered Warehouse Workforce Forecasting & VET/VTO Optimization
+# End-to-End Warehouse Workforce Forecasting and VET/VTO Decision Support System
 
 This project demonstrates an end-to-end machine learning and operational workforce planning prototype. It uses historical demand data to forecast weekly workload, generate VET/VTO/Normal staffing signals, compare model performance against baselines, and estimate potential staffing cost impact.
 
@@ -7,6 +7,41 @@ This project demonstrates an end-to-end machine learning and operational workfor
 - **Interactive Tableau Story:** https://public.tableau.com/shared/JJFMGGF7Y?:display_count=n&:origin=viz_share_link
 - **Streamlit App Demo:** https://warehouse-frontend-ce88.onrender.com/
 - **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
+
+## AWS Fargate Deployment
+
+This project was containerized using Docker and successfully deployed as separate frontend and backend container services using Amazon ECS Fargate and Amazon ECR.
+
+The deployment architecture separates the Streamlit frontend from the Flask forecasting API, enabling independent containerized services and scalable cloud-based workforce forecasting workflows.
+
+The deployment demonstrates:
+- Docker containerization
+- ECS service orchestration
+- AWS Fargate serverless containers
+- Frontend/backend microservice separation
+- Cloud deployment of ML forecasting workloads
+
+### ECS Cluster and Services
+![ECS Cluster](docs/images/05_ecs_services_running.png)
+
+### Frontend Task Running
+![Frontend Task](docs/images/04_frontend_task_definition.png)
+
+### Backend Task Definition
+![Backend Task](docs/images/03_backend_task_definition.png)
+
+### Amazon ECR Repositories
+![ECR](docs/images/01_ecr_repositories_created.png)
+
+### Live Forecast Dashboard on AWS
+![Live Dashboard](docs/images/07_live_fargate_dashboard.png)
+
+The deployment demonstrates:
+- Docker containerization
+- ECS service orchestration
+- AWS Fargate serverless containers
+- Frontend/backend microservice separation
+- Cloud deployment of ML forecasting workloads
 
 ## Project Overview
 
@@ -327,41 +362,6 @@ The project produces:
 - AWS Fargate
 - Amazon ECR
 - CloudWatch
-
-## AWS Fargate Deployment
-
-This project was containerized using Docker and successfully deployed as separate frontend and backend container services using Amazon ECS Fargate and Amazon ECR.
-
-The deployment architecture separates the Streamlit frontend from the Flask forecasting API, enabling independent containerized services and scalable cloud-based workforce forecasting workflows.
-
-The deployment demonstrates:
-- Docker containerization
-- ECS service orchestration
-- AWS Fargate serverless containers
-- Frontend/backend microservice separation
-- Cloud deployment of ML forecasting workloads
-
-### ECS Cluster and Services
-![ECS Cluster](docs/images/05_ecs_services_running.png)
-
-### Frontend Task Running
-![Frontend Task](docs/images/04_frontend_task_definition.png)
-
-### Backend Task Definition
-![Backend Task](docs/images/03_backend_task_definition.png)
-
-### Amazon ECR Repositories
-![ECR](docs/images/01_ecr_repositories_created.png)
-
-### Live Forecast Dashboard on AWS
-![Live Dashboard](docs/images/07_live_fargate_dashboard.png)
-
-The deployment demonstrates:
-- Docker containerization
-- ECS service orchestration
-- AWS Fargate serverless containers
-- Frontend/backend microservice separation
-- Cloud deployment of ML forecasting workloads
 
 ## Business Value
 
