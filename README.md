@@ -1,4 +1,4 @@
-# End-to-End Warehouse Workforce Forecasting and VET/VTO Decision Support System
+# AI-Powered Warehouse Workforce Forecasting and VET/VTO Decision Support System
 
 ## Project Keywords
 
