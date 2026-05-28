@@ -15,6 +15,10 @@ This project demonstrates an end-to-end AI-powered warehouse workforce forecasti
 - **Interactive Tableau Story:** https://public.tableau.com/shared/JJFMGGF7Y?:display_count=n&:origin=viz_share_link
 - **Streamlit Live Demo:** https://warehouse-frontend-ce88.onrender.com/
 - **GitHub Repository:** https://github.com/draculess99/VET-VTO-Forecasting
+  
+## Skills Demonstrated
+
+Machine Learning Forecasting • Workforce Analytics • Warehouse Operations • VET/VTO Optimization • Demand Forecasting • Time-Series Forecasting • XGBoost • Streamlit • Flask API • Docker • AWS ECS Fargate • Predictive Analytics • Operations Research
 
 ## AWS Fargate Deployment
 
