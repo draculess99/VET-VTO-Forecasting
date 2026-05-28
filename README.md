@@ -1,6 +1,10 @@
 # End-to-End Warehouse Workforce Forecasting and VET/VTO Decision Support System
 
-This project demonstrates an end-to-end machine learning and operational workforce planning prototype. It uses historical demand data to forecast weekly workload, generate VET/VTO/Normal staffing signals, compare model performance against baselines, and estimate potential staffing cost impact.
+## Project Keywords
+
+Machine Learning Forecasting | Warehouse Workforce Planning | Amazon Warehouse Operations | VET/VTO Optimization | Labor Demand Forecasting | XGBoost Forecasting | Streamlit Dashboard | Flask API | Docker | AWS ECS Fargate | Workforce Analytics | Predictive Analytics | Time Series Forecasting
+
+This project demonstrates an end-to-end AI-powered warehouse workforce forecasting and VET/VTO optimization system inspired by Amazon fulfillment center operations. It uses historical demand data and machine learning to forecast weekly workload, recommend VET, VTO, or Normal staffing actions, benchmark performance against baseline forecasting methods, and estimate potential staffing cost impact.
 
 ## Project Links
 
