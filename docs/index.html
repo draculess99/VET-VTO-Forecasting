@@ -318,38 +318,39 @@ The result is a warehouse labor planning system that can explain why VET, VTO, o
       <ul>
         <li>XGBoost-based weekly workload forecasting</li>
         <li>VET/VTO/Normal staffing recommendation logic</li>
-        <li>Model comparison against baseline forecasting methods</li>
+        <li>Multi-agent decision workflow for forecast, staffing, cost, risk, and executive summary generation</li>
+        <li>Autonomous supervisor layer that reviews node outputs and produces higher-level operational recommendations</li>
+        <li>Shared operational state passed through the workflow to preserve forecast, staffing, memory, cost, and risk context</li>       
         <li>Labor cost impact and potential staffing savings analysis</li>
-        <li>Streamlit dashboard and Flask API architecture</li>
+        <li>Streamlit dashboard with Flask API backend architecture</li>
         <li>Docker containerization for frontend and backend services</li>
         <li>AWS ECS Fargate deployment evidence</li>
-        <li>Clean portfolio-ready GitHub structure</li>
+        <li>Portfolio-ready GitHub structure with README, screenshots, architecture notes, and workflow traces</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Business Value</h2>
       <p>
-        Warehouse labor planning often faces demand volatility, overtime pressure, and
-        mismatches between available labor and operational workload. This project shows how
-        forecasting and decision automation can help operations teams anticipate staffing
-        needs earlier, reduce uncertainty, and support more data-driven VET/VTO decisions.
+Warehouse labor planning is often reactive: managers respond to workload spikes, overtime pressure, and staffing gaps after they have already affected operations. This project demonstrates how forecasting, agentic AI, and autonomous workflow supervision can support earlier labor decisions by connecting demand prediction with staffing actions, cost impact, operational risk, and executive-level explanation.
+
+Instead of producing only a forecast, the system converts workload signals into VET, VTO, or Normal staffing recommendations that are easier for operations teams to review, explain, and act on.
       </p>
     </section>
 
     <section class="card">
       <h2>Technical Architecture</h2>
       <p>
-        The system combines a machine learning forecasting workflow, a Flask API backend,
-        and a Streamlit dashboard frontend. The application was containerized using Docker
-        and structured for cloud deployment, including AWS ECS Fargate deployment evidence.
+        The system combines machine learning forecasting, backend API services, dashboard visualization, and an autonomous multi-agent decision workflow. Forecast results are passed through specialized workflow nodes for staffing recommendation, cost impact analysis, risk review, memory/context handling, and executive summary generation.
       </p>
 
       <ul>
         <li><strong>Forecasting:</strong> Python, XGBoost, time-series features, baseline comparison</li>
         <li><strong>Backend:</strong> Flask API for forecast and staffing recommendation logic</li>
         <li><strong>Frontend:</strong> Streamlit dashboard for scenario planning and visualization</li>
-        <li><strong>Deployment:</strong> Docker, GitHub, Render, and AWS ECS Fargate evidence</li>
+        <li><strong>Agentic Workflow:</strong> Forecast, staffing, cost, risk, memory, and executive summary nodes</li>
+        <li><strong>Autonomous Supervision:</strong> Supervisor layer reviews accumulated node outputs and generates higher-level recommendations</li>
+        <li><strong>Deployment:</strong> Docker, GitHub, Render/Railway, and AWS ECS Fargate deployment evidence</li>
       </ul>
     </section>
 
@@ -367,6 +368,17 @@ The result is a warehouse labor planning system that can explain why VET, VTO, o
         <span>Flask API</span>
         <span>Docker</span>
         <span>AWS ECS Fargate</span>
+
+        <span>Railway</span>
+        <span>Render</span>
+        <span>LangGraph Workflow</span>
+        <span>Agentic AI</span>
+
+        <span>Autonomous Supervisor</span>
+        <span>Multi-Agent System</span>
+        <span>Risk Monitoring</span>
+        <span>Cost Impact Analysis</span>
+        
         <span>Tableau</span>
         <span>Predictive Analytics</span>
         <span>Warehouse Operations</span>
