@@ -387,9 +387,27 @@ Instead of producing only a forecast, the system converts workload signals into 
     
     <section class="card">
       <h2>Technical Architecture</h2>
+    
       <p>
-        The system combines machine learning forecasting, backend API services, dashboard visualization, and an autonomous multi-agent decision workflow. Forecast results are passed through specialized workflow nodes for staffing recommendation, cost impact analysis, risk review, memory/context handling, and executive summary generation.
+        The system combines machine learning forecasting, backend API services,
+        dashboard visualization, and an autonomous multi-agent decision workflow.
+        Forecast results are passed through specialized workflow nodes for staffing
+        recommendation, cost impact analysis, risk review, memory/context handling,
+        and executive summary generation.
       </p>
+    
+      <img 
+        src="docs/architecture/system_architecture.png" 
+        alt="VET/VTO workforce forecasting system architecture diagram"
+        style="max-width:100%; border:1px solid #ddd; border-radius:8px; margin-top:15px;"
+      >
+    
+      <p><em>
+        Architecture diagram showing the Streamlit dashboard, Flask forecasting API,
+        XGBoost model, staffing recommendation logic, cost impact layer, and agentic
+        workflow components.
+      </em></p>
+   
 
       <ul>
         <li><strong>Forecasting:</strong> Python, XGBoost, time-series features, baseline comparison</li>
