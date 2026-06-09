@@ -78,7 +78,7 @@ The estimated cost impact is tied to the selected forecast horizon, such as 14 w
 or up to 30 weeks depending on the scenario run.
 
 > Note: Cost impact figures are model-generated estimates from demonstration runs.
-> They are not measured savings from a live warehouse deployment.
+> They are not measured savings from a live warehouse deployment. Designed for live deployment; demonstration runs simulate warehouse conditions based on two years of dispatch operations experience.
 
 ## Business Problem
 
