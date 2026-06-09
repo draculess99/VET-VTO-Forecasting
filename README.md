@@ -68,6 +68,18 @@ The system uses historical demand patterns to forecast future weekly workload an
 
 The project was developed as a final capstone for the Springboard Data Analytics program and is inspired by real-world warehouse labor planning challenges.
 
+## Business Impact / Cost Impact Analysis
+
+The application forecasts labor demand and generates VET, VTO, or Normal staffing
+recommendations. A cost-impact model estimates the potential labor cost implications
+of each staffing decision compared with a baseline staffing strategy.
+
+The estimated cost impact is tied to the selected forecast horizon, such as 14 weeks
+or up to 30 weeks depending on the scenario run.
+
+> Note: Cost impact figures are model-generated estimates from demonstration runs.
+> They are not measured savings from a live warehouse deployment.
+
 ## Business Problem
 
 Warehouse operations often face demand volatility. If labor is under-planned, the site may need overtime or risk delayed shipments. If labor is over-planned, the site may offer VTO or carry unnecessary labor cost.
