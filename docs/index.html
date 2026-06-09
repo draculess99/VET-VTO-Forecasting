@@ -340,6 +340,39 @@ Instead of producing only a forecast, the system converts workload signals into 
     </section>
 
     <section class="card">
+        <h2>Business Impact / Demonstration Run</h2>
+        <p>
+          The system forecasts labor demand and generates VET, VTO, or Normal staffing
+          recommendations. A cost-impact model then estimates the potential labor cost
+          implications of each staffing decision compared with a baseline staffing strategy.
+        </p>
+      
+        <div class="project-summary">
+          <div class="summary-box">
+            <strong>Forecast Horizon</strong>
+            Up to 30 weeks, depending on the selected scenario.
+          </div>
+      
+          <div class="summary-box">
+            <strong>Decision Output</strong>
+            VET, VTO, or Normal staffing recommendation.
+          </div>
+      
+          <div class="summary-box">
+            <strong>Estimated Cost Impact</strong>
+            Model-generated estimate from the selected forecast period.
+          </div>
+        </div>
+      
+        <p>
+          <em>
+            Cost impact figures are model-generated estimates from demonstration runs.
+            They are not measured savings from a live warehouse deployment.
+          </em>
+        </p>
+    </section>
+    
+    <section class="card">
       <h2>Technical Architecture</h2>
       <p>
         The system combines machine learning forecasting, backend API services, dashboard visualization, and an autonomous multi-agent decision workflow. Forecast results are passed through specialized workflow nodes for staffing recommendation, cost impact analysis, risk review, memory/context handling, and executive summary generation.
