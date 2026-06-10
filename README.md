@@ -130,6 +130,35 @@ Models considered include:
 
 The final system uses XGBoost because it can capture nonlinear relationships between demand, seasonality, holidays, and external variables.
 
+---
+
+## Model Performance Metrics
+
+The final XGBoost forecasting model was evaluated against baseline forecasting approaches using backtesting on historical weekly demand data.
+
+| Model | RMSE | Improvement vs Seasonal Naive |
+|---|---:|---:|
+| Seasonal Naive Baseline | 2,006,104 | Baseline |
+| Lasso Regression | 1,385,610 | 30.9% |
+| XGBoost Recursive Forecaster | 941,679 | 53.1% |
+
+The XGBoost model reduced forecasting error by approximately **53% compared with the seasonal naive baseline**, showing stronger ability to capture weekly demand patterns, seasonality, holidays, and external demand drivers.
+
+## Estimated Cost Impact from Notebook Backtesting
+
+The notebook also compares estimated staffing cost under a seasonal naive baseline versus the XGBoost model.
+
+| Staffing Strategy | Estimated Cost |
+|---|---:|
+| Seasonal Naive Baseline | $699,247 |
+| XGBoost Model | $152,392 |
+| Estimated Cost Reduction | $546,855 |
+| Estimated Percentage Reduction | 78.2% |
+
+These figures represent **model-estimated staffing cost impact from demonstration backtesting**, not measured savings from a live warehouse deployment.
+
+---
+
 ## Staffing Decision Logic
 
 After forecasting weekly demand, the system classifies each week using demand thresholds:
