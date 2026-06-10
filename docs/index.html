@@ -384,6 +384,54 @@ Instead of producing only a forecast, the system converts workload signals into 
           </em>
         </p>
     </section>
+
+    <section class="card">
+      <h2>Model Performance and Estimated Cost Impact</h2>
+
+      <p>
+        Notebook backtesting showed that the XGBoost recursive forecasting model
+        reduced forecasting error by approximately <strong>53%</strong> compared
+        with a seasonal naive baseline.
+      </p>
+
+      <div class="project-summary">
+        <div class="summary-box">
+          <strong>Seasonal Naive RMSE</strong>
+          2,006,104
+        </div>
+
+        <div class="summary-box">
+          <strong>Lasso RMSE</strong>
+          1,385,610
+        </div>
+
+        <div class="summary-box">
+          <strong>XGBoost RMSE</strong>
+          941,679
+        </div>
+
+        <div class="summary-box">
+          <strong>Forecast Error Reduction</strong>
+          53.1% vs Seasonal Naive
+        </div>
+
+        <div class="summary-box">
+          <strong>Estimated Cost Reduction</strong>
+          $546,855
+        </div>
+
+        <div class="summary-box">
+          <strong>Estimated Percentage Reduction</strong>
+          78.2%
+        </div>
+      </div>
+
+      <p>
+        These figures are model-generated estimates from notebook backtesting and
+        demonstration scenario runs. They are not measured savings from a live
+        warehouse deployment.
+      </p>
+    </section>
     
     <section class="card">
       <h2>Technical Architecture</h2>
